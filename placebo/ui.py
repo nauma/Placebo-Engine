@@ -6,7 +6,7 @@ from pygame.mouse import set_visible
 from json import loads
 
 class Label:
-  def __init__(self, text, x=0, y=0, font="arial", size=16, color=(255, 255, 255), aling="left", antialias=1):
+  def __init__(self, text, x=0, y=0, width=0, height=0, font="arial", size=16, color=(255, 255, 255), aling="left", antialias=1):
     self.text = text
     self.x = x
     self.y = y
@@ -15,8 +15,8 @@ class Label:
     self.font = SysFont(font, size)
     self.aling = aling
     self.antialias = antialias
-    self.width = 0
-    self.height = 0
+    self.width = width
+    self.height = height
 
   def setText(self, text):
     self.text = text
