@@ -57,7 +57,7 @@ class MyFirstComponent(Component):
   def init(self, object, scene, engine):
     print("Component '%s' initialed!", % self.name)
 
-  $ this method run only one game cycle
+  # this method run only one game cycle
   def update(self, object, scene, engie):
     print("'%s' → is runned!", % self.name)
     
