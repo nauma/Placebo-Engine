@@ -14,7 +14,7 @@ myGame.start()
 ```
 
 ### Using Scenes:
-import class
+import class:
 ```python
 from placebo.engine import init, Engine, Scene
 ```
@@ -22,17 +22,17 @@ create new scene `nameScene = Scene(sceneName)`
 ```python
 mainScene = Scene('main')
 ```
-add scene to engine
+add scene to engine:
 ```python
 myGame.add(mainScene)
 ```
-go to scene
+go to scene:
 ```python
 myGame.goTo('main') # go to other scene
 ```
 
 ### Using Objects
-import class
+import class:
 ```python
 from placebo.engine import init, Engine, Scene, Object
 ```
@@ -40,17 +40,17 @@ create new object `objectName = Object(objectName)`
 ```python
 firstObject = Object('firstObject')
 ```
-add object to scene
+add object to scene:
 ```python
 mainScene.add(firstObject)
 ```
 
 ### Usign Components
-import class
+import class:
 ```python
 from placebo.engine import init, Engine, Scene, Object, Component
 ```
-create personal component
+create personal component:
 ```python
 class MyFirstComponent(Component):
   # this method run only once
@@ -63,7 +63,7 @@ class MyFirstComponent(Component):
     
 myFirstComponent = MyFirstComponent('firstComponent')
 ```
-add component into object
+add component into object:
 ```python
 firstObject.add(myFirstComponent)
 ```
